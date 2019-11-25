@@ -73,6 +73,7 @@ class AutoHorizontalScrollImageView @JvmOverloads constructor(
             repeatCount++
             direction = Direction.TO_RIGHT
         }
+        // 右端まで表示したらスクロール方向を左へ変更する
         if (drawable.intrinsicWidth <= currentX + width) {
             direction = Direction.TO_LEFT
         }
