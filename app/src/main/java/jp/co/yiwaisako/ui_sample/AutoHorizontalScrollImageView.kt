@@ -5,11 +5,14 @@ import android.graphics.Canvas
 import android.util.AttributeSet
 import android.widget.ImageView
 
-class AutoHorizontalScrollImageView @JvmOverloads constructor(
+class AutoHorizontalScrollImageView
+@JvmOverloads
+constructor(
     context: Context,
     attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0
-) : ImageView(context, attrs, defStyleAttr) {
+    defStyleAttr: Int = 0,
+    defStyleRes: Int = 0
+) : ImageView(context, attrs, defStyleAttr, defStyleRes) {
 
     init {
         scaleType = ScaleType.MATRIX
